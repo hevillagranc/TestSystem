@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Inventario.Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Inventario
+namespace Inventario 
 {
     public partial class Form1 : Form
     {
@@ -25,6 +26,12 @@ namespace Inventario
         private void button4_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Conexion c = new Conexion();
+
         }
     }
 }
